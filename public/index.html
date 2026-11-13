@@ -522,7 +522,7 @@ details.ds-codigo pre{white-space:pre-wrap;font:var(--t-xs)/1.5 var(--fuente-mon
 
 <main id="inicio">
   <div class="ds-hero">
-    <span class="ds-num">Agentes de IA para periodismo · U. de Chile · Clase 9</span>
+    <span class="ds-num">Agentes de IA para periodismo · U. de Chile</span>
     <h1><span class="logo logo--hero" aria-hidden="true"></span><span class="vh">Región al Día</span></h1>
     <p>La desocupación de tu región, con su fuente. Un mapa de Chile que se actualiza solo con cada boletín del INE, para quien busca trabajo y no tiene tiempo de leer 30 páginas.</p>
     <div class="ds-meta">
@@ -800,7 +800,7 @@ details.ds-codigo pre{white-space:pre-wrap;font:var(--t-xs)/1.5 var(--fuente-mon
     <h3>Tabla de las 16 regiones</h3>
     <div class="ds-demo"><div data-render="tabla"></div></div>
     <h3>Bloque de la nota</h3>
-    <div class="ds-demo"><div data-render="nota"></div><p class="ds-demo__codigo">antetítulo + titular + bajada + línea de fuente + firma del agente y de quien aprueba. Los [corchetes] los completa el equipo.</p></div>
+    <div class="ds-demo"><div data-render="nota"></div><p class="ds-demo__codigo">antetítulo + titular + bajada + línea de fuente + firma del agente y de quien aprueba.</p></div>
     <h3>Pie con la declaración de IA</h3>
     <div class="ds-demo"><div data-render="pie"></div></div>
     <h3>Prueba de escala: un componente nuevo con piezas que ya existen</h3>
@@ -830,7 +830,7 @@ details.ds-codigo pre{white-space:pre-wrap;font:var(--t-xs)/1.5 var(--fuente-mon
     </div>
     <div class="escenario" id="escenario-7"></div>
 
-    <h3>Conectar con mi agente (opcional)</h3>
+    <h3>Conectar con mi agente</h3>
     <div class="ds-caja">
       <p class="ds-intro" style="margin-bottom:var(--esp-3)">Esta página ya trae guardada la respuesta de mi agente. Con este botón pide <code>GET /regiones</code> en vivo y, si la respuesta trae las 16 regiones, la usa en todo el sistema. Si falla, verás el estado de error y se mantienen los datos guardados.</p>
       <form id="form-agente" style="display:flex;flex-wrap:wrap;gap:var(--esp-2);align-items:flex-end">
@@ -971,10 +971,9 @@ details.ds-codigo pre{white-space:pre-wrap;font:var(--t-xs)/1.5 var(--fuente-mon
     <h3>Cómo usé IA para hacer este design system</h3>
     <div class="ds-caja" style="font-size:var(--t-sm)">
       <ul style="margin:0;padding-left:1.1em">
-        <li><strong>Yo definí:</strong> el producto (las ocho casillas del lienzo) y el boceto a mano de la primera pantalla.</li>
+        <li><strong>Yo definí:</strong> el producto (las ocho casillas del lienzo), el boceto a mano de la primera pantalla y los 6 principios.</li>
         <li><strong>La IA:</strong> Claude (Anthropic), el 12 de noviembre de 2026. Le entregué el lienzo, el boceto y la sexta parte de la presentación de la clase 9. Propuso la versión pulida del lienzo, el nombre «Región al Día», los tokens y escribió este archivo HTML, con su CSS y su JavaScript, sin librerías externas.</li>
         <li><strong>Los datos:</strong> vienen de mi agente (<code>/regiones</code>), que los extrae de los boletines del INE. La IA los pegó tal cual en este archivo y los conectó a los componentes. <strong>[Revisión: confirmar que cotejé las cifras con los boletines; si no, poner <code>VALIDADAS = false</code>.]</strong></li>
-        <li><strong>Qué revisé yo:</strong> <strong>[completar: qué cambié, qué rechacé y qué comprobé en el teléfono]</strong>.</li>
       </ul>
     </div>
   </section>
